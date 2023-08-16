@@ -1,0 +1,686 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.layar-belakang {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+.text-center {
+  text-align: center !important;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+nav .logo img {
+  margin-top: -10px;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 70px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #000000e8;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+  /* background-color: #c86b85; */
+  /* background: url(img/backgound.mp4); */
+  /* background-image: url("img/polos-bg.png"); */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  right: 100;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: rgb(8, 8, 8);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+}
+header .intro h3 {
+  font-family: monospace;
+  font-size: 24px;
+  margin: 0;
+  z-index: 1;
+  padding: 20px 25px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.514);
+}
+header .lobby-text2 {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  top: 42%;
+}
+header .lobby-text2 h3 {
+  font-family: sans-serif;;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  /* border: 2px solid rgba(0, 0, 0, 0.514); */
+}
+.layar-depan-subheading {
+  color: #000;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header>.layar-depan>.text2 {
+  color: #000;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.layar-depan-heading {
+  color: #000;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+header .lobyt-bawah {
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 30%;
+  padding-top: 0px;
+}
+header .lobyt-bawah h3 {
+  margin-top: 0px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .lobyt-bawah h5 {
+  margin-top: 0px;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 190;
+} */
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* header .lobyt-bawah h3 {
+  color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+} */
+/* header .intro h2 {
+  flex-direction: column
+  justify-content: center
+  font-size: 24px;
+  margin: 0;
+}  */
+/* .tombol {
+  background-color: #c86b85;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+} */
+header .overlay {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 100;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+section {
+  padding: 70px 0px 30px 0px;
+  align-items: center;
+  justify-content: center;
+}
+section h3 {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 6px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  padding-bottom: 6px;
+  /* margin-bottom: 32px; */
+  align-items: center;
+  justify-content: center;
+}
+/* section h3::after {
+  content: "";
+  border-bottom: 5px solid crimson;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+} */
+/* section h3::after {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 6px;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+} */
+#aboutus,
+#team,
+#blog {
+  text-align: center;
+}
+section p.judul-class {
+  padding: 7px;
+  font-style: italic;
+  font-size: 18px;
+  color: #ababab;
+}
+section .konten-isi p {
+  font-style: normal;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+nav.putih ul li a {
+  color: #333;
+}
+nav .logo img.hitam {
+  display: none;
+}
+section.layar-contact {
+  /* background-color: #f5f6f6; */
+  background-image: url("img/background.png");
+  background-position: center center;
+  background-size: cover;
+}
+section.about-team {
+  background-color: rgb(255, 255, 255);
+}
+
+.gambar {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  height: 300px;
+  /* box-shadow: 0px -2px 20px #030303; */
+  border-radius: 5px;
+}
+.blog .area .text article {
+  padding: 40px;
+}
+.blog .area .text article h4 {
+  margin: 0px;
+}
+.blog .area .text article a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.blog .area .text article a:hover {
+  color: #ccc;
+}
+.tim,
+.blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tim h6 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+section#gallery div {
+  padding: 10px;
+}
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+section.quote {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  font-style: italic;
+  padding: 150px;
+}
+section.quote .layar-belakang p {
+  display: inline;
+  z-index: 1;
+  padding: 2px 4px;
+  text-align: center;
+  /* border: 2px solid rgba(17, 164, 201, 0.788); */
+}
+.tim img {
+  width: 70%;
+  box-shadow: 0px -2px 20px #030303;
+  border-radius: 5px;
+}
+/* .tim img .img-azril{
+  background-size: 10%;
+  box-shadow: 0px -2px 20px #ccc;
+  border-radius: 5px;
+} */
+.tim img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+footer {
+  /* padding: 50px 0px 50px 0px; */
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #343a40;
+  color: #fff;
+}
+.gariss {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.align-items-center {
+  align-items: center !important;
+}
+/* .text-lg-start {
+  text-align: left !important;
+} */
+.pad-contact {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.jarak-footer {
+  flex: 0px 0px auto;
+  width: 33.33333333%;
+}
+.jarak-footer2 {
+  margin-right: 4rem !important;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+.link-dark {
+  color: #ffffff !important;
+}
+.link-dark:hover, .link-dark:focus {
+  color: #ffffff !important;
+}
+/* .text-lg-end {
+  text-align: right !important;
+} */
+.tiban-text {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.tiban-text1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.outline-contact {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #1c1f23;
+  border-color: #1a1e21;
+}
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.container-contact {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.jarak-footer1 {
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+}
+footer .layar-belakang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .layar-belakang div {
+  width: 20%;
+  height: 20%;
+}
+footer .layar-belakang copyright {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .layar-belakang {
+    width: 100%;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .menu ul li a {
+    color: #333;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  .support {
+    display: block;
+  }
+  .support div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .quote .layar-belakang p {
+    display: inline;
+    z-index: 1;
+    width: auto;
+    padding: 10px 15px;
+    text-align: center;
+  }
+}
+
+/* new contact */
+
+form {
+  background: rgba(255, 255, 255, 0);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 0px 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+form .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .box-namemail{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .box-namemail .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .box-namemail .item input{
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .box-pesan{
+  margin-bottom: 24px;
+}
+
+form .box-pesan textarea{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+form .action input{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"]{
+  background: white;
+  color: black;
+}
+
+footer .icons a{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .box-namemail .item input:focus, form .box-pesan textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+
+@media (max-width: 480px){
+  form .box-namemail{
+    flex-direction: column;
+  }
+  form .box-namemail .item{
+    width: 100%;
+  }
+  form .action{
+    display: flex;
+    flex-direction: column;
+  }
+  form .action input{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
