@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="asset//gambar/matahari.png" />
+    <title>WEB DINAMIS | kelompok 1</title>
+    <link rel="stylesheet" href="asset/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="fOverlay">
+        <div class="logo">
+          <a href="#quote"><img src="asset/gambar/elang-putih.png" class="putih" /></a>
+          <a href="#quote"><img src="asset/gambar/elang-item.png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="homeOverlay">
+      <header id="home">
+        <video autoplay muted loop>
+          <source src="asset/gambar/backgound.mp4" type="video/mp4" />
+        </video>
+        <div class="homeText1">
+          <h3>DIRGAHAYU REPUBLIK INDONESIA</h3>
+        </div>
+        <div class="homeText2">
+          <h3>17 AGUSTUS 2023</h3>
+        </div>
+      </header>
+      <main>
+        <section id="aboutus">
+          <div class="fOverlay">
+            <h3>ABOUT TEAM</h3>
+            <p class="judulOverlay">
+              Tim Kelompok 1
+            </p>
+            <div class="tim">
+              <div>
+                <img src="asset/team/diandra.png" />
+                <h6>Diandra</h6>
+                <span>Kerangka, CSS, JS</span>
+              </div>
+              <div>
+                <img src="asset/team/azriel.jpg" />
+                <h6>Azriel</h6>
+                <span>Contact</span>
+              </div>
+              <div>
+                <img src="asset/team/arrafi.jpg" />
+                <h6>Arrafi</h6>
+                <span>Home</span>
+              </div>
+              <div>
+                <img src="asset/team/rifat.jpg" />
+                <h6>Riffat</h6>
+                <span>About</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blogOverlay" id="blog">
+          <div class="fOverlay">
+            <h3>BLOG WEBSITE</h3>
+            <p class="judulOverlay">
+              Artikel Moment Sejarah Indonesia
+            </p>
+            <div class="blog">
+              <div class="area">
+                <div
+                  class="gambar"
+                  style="background-image: url('asset/gambar/revolusi.jpg')">
+                </div>
+                <div class="text">
+                  <article>
+                    <h4><a href="#">Revolusi Nasional Indonesia</a></h4>
+                    <p>
+                      Konflik bersenjata dan pertentangan diplomasi antara Indonesia melawan Belanda yang dibantu oleh pihak sekutu
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div class="area">
+                <div
+                  class="gambar"
+                  style="background-image: url('asset/gambar/yamato.jpg')">
+                </div>
+                <div class="text">
+                  <article>
+                    <h4><a href="#">Insiden Hotel Yamato</a></h4>
+                    <p>
+                      Pada tanggal 19 September 1945 di Hotel Yamato, Surabaya. Insiden perobekan bendera Belanda
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="fOverlay">
+            <h3>CONTACT</h3>
+            <p class="judulOverlay">
+              Jika terjadi masalah pada Web ini, silahkan isi Form dibawah!
+            </p>
+            <form>
+              <div class="contactOverlay">
+                <div class="boxNameMail">
+                  <label for="name">NAMA</label>
+                  <input type="text" id = "name">
+                </div>
+                <div class="boxNameMail">
+                  <label for="email">GMAIL</label>
+                  <input type="text" id = "email">
+                </div>
+              </div>
+              <div class="full">
+                <label for="message">REPORT</label>
+                <textarea name="" id = "message"></textarea>
+              </div>
+              <div class="action">
+                <input type="submit" value = "KIRIM">
+                <input type="reset" value = "HAPUS">
+              </div>
+              <div class="icons">
+                <a href="" class = "fa fa-twitter"></a>
+                <a href="" class = "fa fa-facebook"></a>
+                <a href="" class = "fa fa-instagram"></a>
+                <a href="" class = "fa fa-github"></a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <section class="quote" id="quote">
+        <div class="fOverlay">
+          <p>Coding bisa Copy Paste, tetapi tidak dengan Ide.</p>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <small> Copyright &copy; Kelompok 1.</small>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="asset/javascript.js"></script>
+  </body>
+</html>
